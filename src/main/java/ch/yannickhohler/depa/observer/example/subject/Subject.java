@@ -1,4 +1,4 @@
-package ch.yannickhohler.depa.observer.example;
+package ch.yannickhohler.depa.observer.example.subject;
 
 import ch.yannickhohler.depa.observer.example.display.Observer;
 

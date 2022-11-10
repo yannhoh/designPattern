@@ -3,12 +3,13 @@ package ch.yannickhohler.depa.observer.example;
 import ch.yannickhohler.depa.observer.example.display.CurrentConditionsDisplay;
 import ch.yannickhohler.depa.observer.example.display.ForecastDisplay;
 import ch.yannickhohler.depa.observer.example.display.StatisticsDisplay;
+import ch.yannickhohler.depa.observer.example.subject.WeatherData;
 
 public class Main {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
 
-        CurrentConditionsDisplay currentDisplay =
+        CurrentConditionsDisplay currentDisplay =       // Creating Oberservers with the subject weatherData
                 new CurrentConditionsDisplay(weatherData);
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
         ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);

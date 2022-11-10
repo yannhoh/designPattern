@@ -1,4 +1,8 @@
+# Observer Pattern
 ## Formal Definition 
+
+
+## Different update versions
 - **update()** - ohne Parameter | Nur Pull-Modell. Extrem einfach. Der geänderte Zustand muss vom Observer beim Observable abgefragt
 werden. 
 - **update(Observable s, Color c)** - mit Absender (s) und/oder - Information über neuen Zustand | Einfach. Problematisch zu erweitern falls Argumente einzeln als Parameter auftreten 
@@ -10,4 +14,4 @@ programmieren. Sehr gut erweiterbar.
 ## Notes 
 
 
-<img src="img/.png" width="1000">
+<img src="img/observer_pattern.png" width="1000">

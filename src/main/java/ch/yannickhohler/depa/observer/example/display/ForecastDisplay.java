@@ -1,6 +1,6 @@
 package ch.yannickhohler.depa.observer.example.display;
 
-import ch.yannickhohler.depa.observer.example.WeatherData;
+import ch.yannickhohler.depa.observer.example.subject.WeatherData;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 

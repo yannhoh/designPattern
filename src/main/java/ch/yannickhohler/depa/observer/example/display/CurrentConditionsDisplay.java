@@ -1,6 +1,6 @@
 package ch.yannickhohler.depa.observer.example.display;
 
-import ch.yannickhohler.depa.observer.example.WeatherData;
+import ch.yannickhohler.depa.observer.example.subject.WeatherData;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
@@ -10,6 +10,8 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
     public CurrentConditionsDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
+        System.err.println(celsiusToFahrenheit(30));
+        System.err.println(fahrenheitToCelsius(86));
     }
 
     public void update(float temperature, float humidity, float pressure) {
@@ -20,7 +22,15 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
     public void display() {
         System.out.println("Current conditions: " + temperature + "°C und " + humidity + "% humidity");
-        System.out.println("Feels Like: " + computeHeatIndex(temperature, humidity));
+        System.out.println("Feels Like (F): " + computeHeatIndex(celsiusToFahrenheit(temperature), humidity));
+        System.out.println("Feels Like (C): " + fahrenheitToCelsius(computeHeatIndex(celsiusToFahrenheit(temperature), humidity)));
+    }
+
+    static float celsiusToFahrenheit(float c) {
+        return (c * (9f/5f) + 32f);
+    }
+    static float fahrenheitToCelsius(float f) {
+        return (f - 32f) * (5f/9f);
     }
 
     private float computeHeatIndex(float t, float rh) {
