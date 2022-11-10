@@ -10,3 +10,4 @@ Ein Iterator ermöglicht den Zugriff auf die Elemente eines Aggregats, ohne dess
 - Iterator wird benötigt, um damit Waitress über beide Speisekarten iterieren kann, ohne die interne Struktur der Speisekarten zu kennen.
 
 ## Nice To Know
+- Bei HashMap sind indirekte und separate Iteratoren von key und values zu haben
