@@ -3,12 +3,12 @@ package ch.yannickhohler.depa.iterator_composite.example_composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Menu extends MenuComponent {
+public class MenuComposite extends MenuComponent {
     List<MenuComponent> menuComponents = new ArrayList<MenuComponent>();
     String name;
     String description;
 
-    public Menu(String name, String description) {
+    public MenuComposite(String name, String description) {
         this.name = name;
         this.description = description;
     }

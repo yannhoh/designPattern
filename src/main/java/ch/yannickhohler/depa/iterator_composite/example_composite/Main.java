@@ -2,11 +2,11 @@ package ch.yannickhohler.depa.iterator_composite.example_composite;
 
 public class Main {
     public static void main(String[] args) {
-        MenuComponent pancakeHouseMenu  = new Menu("PFANNKUCHENHAUS-SPEISEKARTE", "Frühstück");
-        MenuComponent dinerMenu         = new Menu("RESTAURANT-SPEISEKARTE", "Mittagstisch");
-        MenuComponent cafeMenu          = new Menu("CAFÉ-SPEISEKARTE", "Abendessen");
-        MenuComponent dessertMenu       = new Menu("DESSERTKARTE", "Natürlich Nachtisch!");
-        MenuComponent allMenus          = new Menu("ALLE SPEISEKARTEN", "Alle Speisekarten gemeinsam");
+        MenuComponent pancakeHouseMenu  = new MenuComposite("PFANNKUCHENHAUS-SPEISEKARTE", "Frühstück");
+        MenuComponent dinerMenu         = new MenuComposite("RESTAURANT-SPEISEKARTE", "Mittagstisch");
+        MenuComponent cafeMenu          = new MenuComposite("CAFÉ-SPEISEKARTE", "Abendessen");
+        MenuComponent dessertMenu       = new MenuComposite("DESSERTKARTE", "Natürlich Nachtisch!");
+        MenuComponent allMenus          = new MenuComposite("ALLE SPEISEKARTEN", "Alle Speisekarten gemeinsam");
 
         allMenus.add(pancakeHouseMenu);
         allMenus.add(dinerMenu);

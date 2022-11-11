@@ -19,7 +19,6 @@ public class ArrayIterator implements Iterator<MenuItem> {
 
     @Override public MenuItem next() {
         if(!hasNext()) throw new IndexOutOfBoundsException();
-
         return menuItems[index++];
     }
 }
