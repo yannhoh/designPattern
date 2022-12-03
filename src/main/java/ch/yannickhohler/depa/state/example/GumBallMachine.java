@@ -8,24 +8,19 @@ import ch.yannickhohler.depa.state.example.states.State;
 import ch.yannickhohler.depa.state.example.states.WinnerState;
 
 public class GumBallMachine {
-
     private State soldOutState;
     private State noQuarterState;
     private State winnerState;
     private State hasQuarterState;
     private State soldState;
-
     private State state;
-
     public int count;
-
     public GumBallMachine(int numberGumballs) {
         this.soldOutState = new SoldOutState(this);
         this.noQuarterState = new NoQuarterState(this);
         this.winnerState = new WinnerState(this);
         this.hasQuarterState = new HasQuarterState(this);
         this.soldState = new SoldState(this);
-
         this.count = numberGumballs;
 
         if (numberGumballs > 0) {
@@ -34,18 +29,6 @@ public class GumBallMachine {
             state = soldOutState;
         }
     }
-
-    public void releaseBall() {
-        System.out.println("Ein Kaugummi wird ausgegeben ...");
-        if (count > 0) {
-            count--;
-        }
-    }
-
-    public void releaseCoin() {
-        System.out.println("Coin wird ausgegeben");
-    }
-
     public void insertQuarter() {
         state.insertQuarter();
     }
@@ -62,10 +45,21 @@ public class GumBallMachine {
         state.dispense();
     }
 
+    public void releaseBall() {
+        System.out.println("Ein Kaugummi wird ausgegeben ...");
+        if (count > 0) {
+            count--;
+        }
+    }
+
     public void fillUp(int amount) {
         assert amount < 0;
         count += amount;
         state.fillUp();
+    }
+
+    public void releaseCoin() {
+        System.out.println("Coin wird ausgegeben");
     }
 
     public void setState(State state) {

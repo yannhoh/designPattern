@@ -1,10 +1,10 @@
 # State Pattern
-<img src="img/gumballMachine.png" width="500">
+<img src="img/gumballMachine.png">
 
 - Das Verhalten der einzelnen Zustände wurde in separate Klassen ausgelagert.
 
 ## Formal Definition
-<img src="img/state_pattern.png" width="500">
+<img src="img/state_pattern.png">
 
 ## Zustandsübergänge
 #### Als Faustregel gilt: 

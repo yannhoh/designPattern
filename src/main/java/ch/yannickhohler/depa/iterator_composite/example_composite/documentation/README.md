@@ -13,6 +13,9 @@ Das Composite-Muster schafft die Möglichkeit, dass Clients Komposita und Einzel
 - Nicht alle Subklassen von abstract MenuComponent werden alle Methoden sinnvoll implementieren können. -> Werfen Exception wenn aufgerufen
 
 ## Nice To Know 
+
+<img src="img/ab-composite.png">
+
 ### TRANSPARENT vs SAVE
 - Composite-spezifischen Methoden in Composite-Klasse: **SAVE** *favorisiert Typsicherheit und Klarheit*
 - Composite-spezifischen Methoden in Component-Klasse: **TRANSPARENT**. *favorisiert Transparenz und Einheitlichkeit.* 
