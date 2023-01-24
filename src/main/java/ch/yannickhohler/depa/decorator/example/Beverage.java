@@ -3,8 +3,6 @@ package ch.yannickhohler.depa.decorator.example;
 public abstract class Beverage {
     protected String description;
     protected double price;
-
-
     private final Size size;
     public enum Size {Small, Medium, Large}
 
