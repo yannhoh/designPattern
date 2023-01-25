@@ -7,8 +7,8 @@ Aufträge in Warteschlangen einzureihen oder zu protokollieren oder das Rückgä
 zu unterstützen.
 ```
 <img src="img/commands.png" width="700px" />
-
 <img src="img/diagramm.png" width="700px" />
+<img src="img/sequence_diagram.png" width="700px" />
 
 ### Makro Commands
 Makro-Befehle sind eine einfache
@@ -23,3 +23,10 @@ Unterstützung für undo() implementieren
 
 ### Command & Observer Pattern combined
 <img src="img/oberserver_command.png" width="700px" />
+
+### Undo & Redo
+<img src="img/undo_redo.png" width="700px" />
+<img src="img/undo_redo_stacks.png" width="700px" />
+Falls ein neuer Command dem Undo-Stack hinzugefügt wird, muss der
+Redo-Stack gelöscht werden. (Nichts zu wiederholen da wir nicht
+zurückgegangen sind) 
