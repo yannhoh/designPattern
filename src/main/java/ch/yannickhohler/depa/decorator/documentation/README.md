@@ -14,9 +14,9 @@ Das Decorator-Muster erweitert ein Objekt dynamisch um weitere Verantwortlichkei
 Dekoratoren bieten eine flexible Alternative zu Subklassen für die Erweiterung der Funktionalität.
 ```
 
-<img src="img/decorator.png">
+<img src="img/decorator.png" width="700">
 
-<img src="img/decorator_uml.png">
+<img src="img/decorator_uml.png" width="800">
 
 ## Aspekte 
 
@@ -63,6 +63,7 @@ FixationDecorator.isInstanceOf(AnimationDecorator) == True
 ### 2. Falscher Owner bei dekorierten Objekten
 Dekorieren Sie eine Figur und löschen Sie diese anschliessend. Sie werden dann folgendes Bild sehen:
 <img src="img/delete-figure.png" width="700px" />
+
 Obwohl die Handles bei der Entfernung der Selection entfernt werden, werden die Handles nicht gelöscht.
 Dies passiert weil beim Aufruf von getOwner() auf die Handles dieses verketteten Objekts, der Owner Oval 
 zurückgegeben wird und nicht der Decorator. 

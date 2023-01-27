@@ -1,4 +1,4 @@
-package ch.yannickhohler.depa.combined;
+package ch.yannickhohler.depa.template_method.fragile_baseclass_problem;
 
 public class Main {
     public static void main(String[] args) {

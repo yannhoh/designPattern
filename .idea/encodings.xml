@@ -11,10 +11,16 @@
     <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/iterator_composite/example_composite/documentation/img/ab-composite.png" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/iterator_composite/example_composite/documentation/img/auftrag-uml.png" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/clone/Company.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/clone/Company.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/clone/Employee.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/clone/Employee.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/clone/PartTimeEmployee.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/clone/PartTimeEmployee.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/copy/Company.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/copy/Company.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/copy/Employee.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/copy/Employee.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/copy/PartTimeEmployee.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/ch/yannickhohler/depa/prototype/example/copy/PartTimeEmployee.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

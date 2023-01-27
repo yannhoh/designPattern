@@ -6,8 +6,10 @@ einem Objekt und ermöglicht es dadurch, andere Objekte mit verschiedenen Auftr�
 Aufträge in Warteschlangen einzureihen oder zu protokollieren oder das Rückgängigmachen von Operationen
 zu unterstützen.
 ```
-<img src="img/commands.png" width="700px" />
+<img src="img/commands.png" width="500px" />
+
 <img src="img/diagramm.png" width="700px" />
+
 <img src="img/sequence_diagram.png" width="700px" />
 
 ### Makro Commands
@@ -19,6 +21,7 @@ Unterstützung für undo() implementieren
 
 ### Protokollieren
 <img src="img/store_load.png" width="250px" />
+
 <img src="img/restore.png" width="1000px" />
 
 ### Command & Observer Pattern combined
@@ -26,7 +29,9 @@ Unterstützung für undo() implementieren
 
 ### Undo & Redo
 <img src="img/undo_redo.png" width="700px" />
+
 <img src="img/undo_redo_stacks.png" width="700px" />
+
 Falls ein neuer Command dem Undo-Stack hinzugefügt wird, muss der
 Redo-Stack gelöscht werden. (Nichts zu wiederholen da wir nicht
 zurückgegangen sind) 
