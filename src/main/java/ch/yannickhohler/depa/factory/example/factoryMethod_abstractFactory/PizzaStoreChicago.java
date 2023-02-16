@@ -7,11 +7,8 @@ import ch.yannickhohler.depa.factory.example.factoryMethod_abstractFactory.pizza
 import ch.yannickhohler.depa.factory.example.factoryMethod_abstractFactory.pizzas.ClamPizza;
 
 public class PizzaStoreChicago extends PizzaStoreAbstract {
-
-    // Factory Method
     @Override AbstractPizza createPizza(String type) {
         PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
-
         AbstractPizza pizza = null;
         if (type.equals("cheese")) {
             pizza = new CheesePizza(ingredientFactory);

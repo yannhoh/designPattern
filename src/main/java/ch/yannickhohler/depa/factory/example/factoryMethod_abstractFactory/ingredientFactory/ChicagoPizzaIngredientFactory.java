@@ -14,24 +14,20 @@ import ch.yannickhohler.depa.factory.example.factoryMethod_abstractFactory.ingre
 import ch.yannickhohler.depa.factory.example.factoryMethod_abstractFactory.ingredientFactory.ingredients.Veggies;
 
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
-
     @Override public Dough createDough() { return new ThickCrustDough(); }
-
     @Override public Sauce createSauce() { return new TomatoSauce(); }
-
     @Override public Cheese createCheese() {
         return new MozzarellaChesse();
+    }
+    @Override public Clams createClam() {
+        return new FrozenClams();
     }
 
     @Override public Veggies[] createVeggies() {
         return new Veggies[] { new BlackOlives(), new Onions() };
     }
-
     @Override public SlicedPepperoni createPepperoni() {
         return new SlicedPepperoni();
     }
 
-    @Override public Clams createClam() {
-        return new FrozenClams();
-    }
 }

@@ -7,16 +7,15 @@ public class RemoteControl {
     int amountOfCommands = 7;
     Command[] onCommands;
     Command[] offCommands;
-
     Command undoCommand;
 
     public RemoteControl() {
-        onCommands = new Command[amountOfCommands];
+        onCommands  = new Command[amountOfCommands];
         offCommands = new Command[amountOfCommands];
         Command noCommand = new NoCommand();
         undoCommand = noCommand;
         for (int i = 0; i < amountOfCommands; i++) {
-            onCommands[i] = noCommand;
+            onCommands[i]  = noCommand;
             offCommands[i] = noCommand;
         }
     }
@@ -25,7 +24,7 @@ public class RemoteControl {
         if(slot > amountOfCommands) throw new IllegalArgumentException();
         if(slot < 0)                throw new IllegalArgumentException();
 
-        onCommands[slot] = onCommand;
+        onCommands[slot]  = onCommand;
         offCommands[slot] = offCommand;
     }
 

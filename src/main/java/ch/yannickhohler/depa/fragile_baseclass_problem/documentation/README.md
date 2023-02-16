@@ -18,6 +18,55 @@ Klasse ein privates Feld, das auf eine Instanz der bestehenden Klasse verweist.
   Weiterleitung (Forwarding) bezeichnet, und die Methoden der neuen Klasse
   Weiterleitungsmethoden genannt.
 
+### Callbacks aus der Basisklasse erkennen / ignorieren
+````java
+//Callbacks nicht zählen mittels Callstack & Stackframes
+@Override
+public void write(char ch) throws IOException {
+    int temp = ++counter;
+    super.write(ch); // Erzeugt Callback welcher ignoriert wird (counter)
+    counter = temp;
+}
+
+@Override
+public void write(String s) throws IOException {
+    int temp = counter + s.length();
+    super.write(s); // Erzeugt Callback welcher ignoriert wird (counter)
+    counter = temp;
+}
+````
+
+### Callbacks erkennen via boolean
+````java
+private boolean invoked; // Callbacks nit zählen mittels boolean
+
+@Override
+public void write(char ch) throws IOException {
+    if(!invoked) {
+        invoked = true;
+        super.write(ch);
+        counter++;
+        invoked = false;
+    } else {
+        super.write(ch);
+    }
+}
+
+@Override
+public void write(String s) throws IOException {
+    if(!invoked) {
+        invoked = true;
+        super.write(s);
+        counter += s.length();
+        invoked = false;
+    } else {
+        super.write(s);
+        }
+}
+````
+### Mit Decorator Pattern
+- Counter in der Decorator-Klase zählen und alles andere an INNER weiterleiten
+
 ## Real World 
 - Beispielsweise stellt Guava Weiterleitungsklassen für alle Sammlungs-Schnittstellen Guava bereit.
 - In den Java-Plattform-Bibliotheken wird gegen dieses Prinzip wiederholt ver-

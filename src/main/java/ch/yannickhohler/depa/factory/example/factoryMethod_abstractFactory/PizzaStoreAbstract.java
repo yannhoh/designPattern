@@ -3,7 +3,6 @@ package ch.yannickhohler.depa.factory.example.factoryMethod_abstractFactory;
 import ch.yannickhohler.depa.factory.example.factoryMethod_abstractFactory.pizzas.AbstractPizza;
 
 public abstract class PizzaStoreAbstract {
-
     public AbstractPizza orderPizza(String type) {
         AbstractPizza pizza;
         pizza = createPizza(type);
@@ -13,7 +12,6 @@ public abstract class PizzaStoreAbstract {
         pizza.box();
         return pizza;
     }
-
     // Factory Method abstract
     // Die gesamte Verantwortung für die Instanziierung von Pizzas wurde in
     // eine Methode verschoben, die sich wie eine Factory verhält. (Fabrikmethode)

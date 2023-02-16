@@ -6,14 +6,15 @@ public class SoldOutState implements State {
 
     private final GumBallMachine gumballMachine;
 
+    public SoldOutState(GumBallMachine gumballMachine) {
+        this.gumballMachine = gumballMachine;
+    }
+
     @Override public void fillUp() {
         System.out.println("Thx for filling up");
         gumballMachine.setState(gumballMachine.getNoQuarterState());
     }
 
-    public SoldOutState(GumBallMachine gumballMachine) {
-        this.gumballMachine = gumballMachine;
-    }
 
     @Override public void insertQuarter() {
         System.out.println("Sorry, wir sind ausverkauft. Hier Ihre Münze zurück");

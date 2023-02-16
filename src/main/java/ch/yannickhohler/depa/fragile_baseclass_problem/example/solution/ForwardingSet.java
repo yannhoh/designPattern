@@ -1,4 +1,4 @@
-package ch.yannickhohler.depa.template_method.fragile_baseclass_problem.example.solution;
+package ch.yannickhohler.depa.fragile_baseclass_problem.example.solution;
 
 import java.util.Collection;
 import java.util.Iterator;

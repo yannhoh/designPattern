@@ -110,6 +110,7 @@ Wenn Sie nun eine Figur mit dem `AnimationDecorator` dekorieren und anschliessen
 #### Lösung: Dynamic Innvocation
 Inside abstract Component, Die Funktionen die dynamic Innvocation benötigen:
 ```java
+//Abstract Component
 public void move() {
     if (parent != null) { // Bis zum Anfang der Kette gehen
         parent.move()

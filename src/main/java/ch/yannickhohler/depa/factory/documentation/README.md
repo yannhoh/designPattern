@@ -9,7 +9,8 @@ werden soll
 
 ### Simple Factory 
 - Package simpleFactory
-<img src="img/simplePizzaFactory.png">
+
+<img src="img/simplePizzaFactory.png" width="800px">
 
 ### Factory Method 
 ```text
@@ -18,8 +19,10 @@ die Subklassen entscheiden, welche Klassen instanziiert werden. Factory Method e
 Klasse, die Instanziierung in Subklassen zu verlagern.
 ```
 - Package storeAbstract
-<img src="img/factory_method.png">
-<img src="img/UML_factoryMethod.png">
+
+<img src="img/factory_method.png"  width="800px">
+
+<img src="img/UML_factoryMethod.png"  width="800px">
 
 ### Abstract Factory
 ```text
@@ -28,5 +31,7 @@ von Familien verwandter oder zusammenhängender Objekte an,
 ohne konkrete Klassen anzugeben.
 ```
 -> PizzaIngredientFactory
-<img src="img/abstractFactory_ingredients.png">
-<img src="img/UML_abstractFactory.png">
+
+<img src="img/abstractFactory_ingredients.png"  width="800px">
+
+<img src="img/script-af.png"  width="800px">

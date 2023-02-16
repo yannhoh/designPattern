@@ -1,4 +1,4 @@
-package ch.yannickhohler.depa.template_method.fragile_baseclass_problem.example.problem;
+package ch.yannickhohler.depa.fragile_baseclass_problem.example.problem;
 
 import java.util.Collection;
 import java.util.HashSet;
